@@ -212,7 +212,7 @@ const calendarData = [
         title: "Opening Keynote",
         time: "09:00 AM - 10:30 AM",
         speaker: "Sarah Johnson",
-        image: "assets/img/calendar/c1.png"
+        image: "https://i.pinimg.com/736x/71/f4/aa/71f4aa9a8ea3768b7d6a2c83bfaadf4d.jpg"
     },
     {
         date: "16",
@@ -220,7 +220,7 @@ const calendarData = [
         title: "Tech Workshops",
         time: "10:00 AM - 04:00 PM",
         speaker: "Michael Chen & Team",
-        image: "assets/img/calendar/c2.png"
+        image: "https://i.pinimg.com/1200x/8c/fe/6c/8cfe6ccdb33e6d0c7937ff00da12db5a.jpg"
     },
     {
         date: "17",
@@ -228,7 +228,7 @@ const calendarData = [
         title: "Closing Ceremony",
         time: "03:00 PM - 05:00 PM",
         speaker: "All Speakers",
-        image: "assets/img/calendar/c3.png"
+        image: "https://i.pinimg.com/736x/58/95/ff/5895ffe39d1592d6e48cdf205a74cea8.jpg"
     }
 ];
 
