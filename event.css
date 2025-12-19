@@ -688,3 +688,609 @@ html {
 .event-register a:hover {
     text-decoration: underline;
 }
+/* ================= RESPONSIVE ================= */
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  /* HEADER */
+  .header {
+    padding: 25px 40px;
+  }
+  
+  .header.scrolled {
+    padding: 15px 40px;
+  }
+  
+  .logo {
+    font-size: 30px;
+  }
+  
+  .header.scrolled .logo {
+    font-size: 24px;
+  }
+  
+  .nav-menu li a {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  
+  /* HERO SECTION */
+  .title {
+    font-size: 70px;
+  }
+  
+  .hero-content {
+    left: 8%;
+  }
+  
+  /* ABOUT SECTION */
+  .about-text {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* SPEAKERS SECTION */
+  .ev-speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .ev-speaker-img {
+    height: 380px;
+  }
+  
+  /* PRICING SECTION */
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pricing-card.featured {
+    transform: none;
+  }
+  
+  /* COUNTDOWN */
+  .timer-wrapper {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .timer-box {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .timer-box .number {
+    font-size: 36px;
+  }
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  /* HEADER */
+  .header {
+    padding: 20px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .header.scrolled {
+    padding: 15px 25px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    width: 100%;
+  }
+  
+  .nav-menu ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+  
+  .nav-menu li a {
+    margin-left: 0;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* SEARCH BAR */
+  .search-bar {
+    width: 90%;
+    top: 110px;
+  }
+  
+  /* HERO SECTION */
+  .slider-wrapper {
+    height: 80vh;
+  }
+  
+  .hero-content {
+    left: 5%;
+    right: 5%;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+  
+  .date-location {
+    font-size: 14px;
+    margin: 15px 0 25px;
+  }
+  
+  /* SLIDER DOTS */
+  .slider-indicators {
+    bottom: 25px;
+    padding: 8px 12px;
+  }
+  
+  .dot {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+  
+  /* ABOUT SECTION */
+  .about-event {
+    padding: 60px 5%;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    padding: 35px 25px;
+  }
+  
+  /* SPEAKERS SECTION */
+  .ev-speakers {
+    padding: 60px 5%;
+  }
+  
+  .ev-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .ev-speakers-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .ev-speaker-img {
+    height: 350px;
+  }
+  
+  /* PRICING SECTION */
+  .pricing-section {
+    padding: 60px 15px;
+  }
+  
+  .pricing-title h3 {
+    font-size: 2rem;
+  }
+  
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .pricing-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* COUNTDOWN */
+  .countdown-section {
+    padding: 60px 0;
+  }
+  
+  .timer-wrapper {
+    justify-content: space-around;
+  }
+  
+  .timer-box {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .timer-box .number {
+    font-size: 28px;
+  }
+  
+  .timer-box .label {
+    font-size: 12px;
+  }
+  
+  /* CALENDAR SECTION */
+  .event-calendar-section {
+    padding: 60px 15px;
+  }
+  
+  .event-calendar-table thead td {
+    font-size: 1.3rem;
+    padding: 20px 15px;
+  }
+  
+  .event-calendar-table td {
+    padding: 15px;
+  }
+  
+  .event-date {
+    font-size: 1.3rem;
+  }
+  
+  .event-img {
+    width: 60px;
+  }
+  
+  .event-img img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* HIDE SOME ELEMENTS ON MOBILE */
+  .event-info h6,
+  .event-info p {
+    display: none;
+  }
+}
+
+/* ---------- Small Mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  /* HEADER */
+  .header {
+    padding: 15px 20px;
+  }
+  
+  .header.scrolled {
+    padding: 12px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav-menu ul {
+    gap: 10px;
+  }
+  
+  .nav-menu li a {
+    font-size: 13px;
+    margin-right: 15px;
+  }
+  
+  /* HERO SECTION */
+  .slider-wrapper {
+    height: 70vh;
+  }
+  
+  .title {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  .btn-buy-tickets {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+  
+  /* ABOUT SECTION */
+  .about-event {
+    padding: 50px 4%;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .feature-card {
+    padding: 30px 20px;
+  }
+  
+  .feature-card i {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 18px;
+  }
+  
+  /* SPEAKERS SECTION */
+  .ev-speakers {
+    padding: 50px 4%;
+  }
+  
+  .ev-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .ev-speaker-img {
+    height: 300px;
+  }
+  
+  .ev-speaker-info {
+    padding: 20px;
+  }
+  
+  .ev-speaker-info h3 {
+    font-size: 18px;
+  }
+  
+  /* PRICING SECTION */
+  .pricing-title h3 {
+    font-size: 1.8rem;
+  }
+  
+  .pricing-header {
+    padding: 25px 15px;
+  }
+  
+  .pricing-price {
+    font-size: 2.5rem;
+  }
+  
+  .pricing-features {
+    padding: 20px 15px;
+  }
+  
+  .pricing-features li {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+  
+  /* COUNTDOWN */
+  .timer-wrapper {
+    gap: 10px;
+  }
+  
+  .timer-box {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .timer-box .number {
+    font-size: 24px;
+  }
+  
+  .timer-box .label {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* CALENDAR SECTION - STACKED VERSION */
+  .event-calendar-table {
+    display: block;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .event-calendar-table thead {
+    display: none;
+  }
+  
+  .event-calendar-table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .event-calendar-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .event-calendar-table td {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .event-calendar-table td:last-child {
+    border-bottom: none;
+  }
+  
+  .event-date {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .event-date span {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  
+  .event-img {
+    width: auto;
+    text-align: center;
+  }
+  
+  .event-img img {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+  }
+  
+  /* HIDE SOME ELEMENTS ON SMALL MOBILE */
+  .event-info h6,
+  .event-info p {
+    display: block;
+  }
+}
+
+/* ---------- Extra Small (≤ 320px) ---------- */
+@media (max-width: 320px) {
+  /* HEADER */
+  .header {
+    padding: 12px 15px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .nav-menu ul {
+    gap: 8px;
+  }
+  
+  .nav-menu li a {
+    font-size: 12px;
+    margin-right: 12px;
+  }
+  
+  /* HERO SECTION */
+  .title {
+    font-size: 30px;
+  }
+  
+  .btn-buy-tickets {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* ABOUT SECTION */
+  .feature-card {
+    padding: 25px 15px;
+  }
+  
+  .feature-card i {
+    font-size: 32px;
+  }
+  
+  /* SPEAKERS SECTION */
+  .ev-speaker-img {
+    height: 250px;
+  }
+  
+  /* PRICING SECTION */
+  .pricing-price {
+    font-size: 2rem;
+  }
+  
+  /* COUNTDOWN */
+  .timer-wrapper {
+    gap: 8px;
+  }
+  
+  .timer-box {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .timer-box .number {
+    font-size: 22px;
+  }
+}
+
+/* ---------- Landscape Mode ---------- */
+@media (max-height: 600px) and (orientation: landscape) {
+  .slider-wrapper {
+    height: 100vh;
+  }
+  
+  .hero-content {
+    top: 55%;
+  }
+  
+  .title {
+    font-size: 40px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+  }
+  
+  .date-location {
+    margin: 10px 0 20px;
+    font-size: 13px;
+  }
+  
+  .slider-indicators {
+    bottom: 20px;
+  }
+}
+
+/* ---------- Print Styles ---------- */
+@media print {
+  .header,
+  .search-bar,
+  .slider-indicators,
+  .btn-buy-tickets,
+  .pricing-btn,
+  .event-btn {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .slider-wrapper {
+    height: auto;
+    position: static;
+  }
+  
+  .hero-section {
+    position: static;
+    opacity: 1;
+    background: none;
+  }
+  
+  .hero-section::before {
+    display: none;
+  }
+  
+  .hero-content {
+    position: static;
+    transform: none;
+    color: black;
+  }
+  
+  .title {
+    color: black;
+  }
+}
