@@ -121,9 +121,15 @@ form {
 .btn {
     width: 100%;
     height: 48px;
+<<<<<<< HEAD
     background: #fd0606;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(19, 8, 8, 0.1);
+=======
+    background: #7494ec;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+>>>>>>> 48946f6c761b3511b8d8701cfc02eabfad440a78
     border: none;
     outline: none;
     cursor: pointer;
@@ -159,7 +165,11 @@ form {
     left: -250%;
     width: 300%;
     height: 100%;
+<<<<<<< HEAD
     background: #f4061a;
+=======
+    background: #7494ec;
+>>>>>>> 48946f6c761b3511b8d8701cfc02eabfad440a78
     border-radius: 150px;
     z-index: 2;
     transition: 1.8s ease-in-out;
