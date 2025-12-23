@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento - News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">Evento<span>.</span></div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="event.html">HOME</a></li>
+                    <li><a href="#">SPEAKERS</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="news.html">NEWS</a></li> 
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="search-icon">&#9906;</div>
+        </div>
+    </header>
+    <div class="search-bar" id="search-bar">
+        <div class="search-input-group">
+            <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm..." autocomplete="off">
+            <div id="search-suggestions" class="suggestions-box"></div> 
+        </div>
+        <button id="search-btn">Tìm kiếm</button>
+    </div>
+
+    <section class="news-hero" style="background-image: url('https://i.pinimg.com/1200x/a1/74/90/a17490876e3492638b55b4ae62cf6e47.jpg');">
+        <div class="news-hero-content">
+            <p class="subtitle animate-up">STAY UPDATED</p>
+            <h1 class="hero-title animate-up">LATEST NEWS</h1>
+            <p class="breadcrumb animate-up">Announcements • Events • Updates</p>
+        </div>
+    </section>
+
+    <main class="white-bg-section">
+        <div id="news-container" class="news-container">
+            </div>
+        <div class="load-more-container">
+            <button id="loadMoreBtn" class="btn-load-more">
+                XEM THÊM <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </main>
+
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+        </div>
+    </div>
+    <script src="news.js"></script>
+</body>
+</html>
