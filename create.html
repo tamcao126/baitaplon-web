@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+
+<div class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">Evento<span>.</span></div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main"></main>
+        <!-- CONTENT -->
+        <section class="content">
+            <h3>* Upload hình ảnh</h3>
+
+            <div class="upload-area">
+                <!-- POSTER -->
+                <div class="upload-box vertical" onclick="upload('posterInput')">
+                    <input type="file" id="posterInput" hidden accept="image/*">
+                    <img id="posterPreview">
+                    <p>Thêm ảnh sự kiện để<br>hiển thị ở các vị trí khác</p>
+                    <span>(720x958)</span>
+                </div>
+
+                <!-- BANNER -->
+                <div class="upload-box horizontal" onclick="upload('bannerInput')">
+                    <input type="file" id="bannerInput" hidden accept="image/*">
+                    <img id="bannerPreview">
+                    <p>Thêm ảnh nền sự kiện</p>
+                    <span>(1280x720)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<!-- EVENT INFO FORM -->
+<section class="event-form">
+    <!-- Tên sự kiện -->
+    <div class="form-group">
+        <label>* Tên sự kiện</label>
+        <div class="input-wrap">
+            <input type="text" placeholder="Tên sự kiện" maxlength="100">
+            <span class="counter">0 / 100</span>
+        </div>
+    </div>
+
+    <!-- Địa chỉ sự kiện -->
+    <div class="form-group">
+        <label>* Địa chỉ sự kiện</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="eventType" checked>
+                Sự kiện Offline
+            </label>
+            <label>
+                <input type="radio" name="eventType">
+                Sự kiện Online
+            </label>
+        </div>
+    </div>
+
+    <!-- Tên địa điểm -->
+    <div class="form-group">
+        <label>* Tên địa điểm</label>
+        <div class="input-wrap">
+            <input type="text" placeholder="Tên địa điểm" maxlength="80">
+            <span class="counter">0 / 80</span>
+        </div>
+    </div>
+
+    <!-- Tỉnh / Quận -->
+    <div class="form-row">
+        <div class="form-group">
+            <label>* Tỉnh/Thành</label>
+            <select>
+                <option>Tỉnh/Thành</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Quận/Huyện</label>
+            <select>
+                <option>Quận/Huyện</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Phường / Số nhà -->
+    <div class="form-row">
+        <div class="form-group">
+            <label>Phường/Xã</label>
+            <select>
+                <option>Phường/Xã</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>* Số nhà, đường</label>
+            <div class="input-wrap">
+                <input type="text" placeholder="Số nhà, đường" maxlength="80">
+                <span class="counter">0 / 80</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thể loại -->
+    <div class="form-group">
+        <label>* Thể loại sự kiện</label>
+        <select>
+            <option>Vui lòng chọn</option>
+            <option>Âm nhạc</option>
+            <option>Hội thảo</option>
+            <option>Workshop</option>
+        </select>
+    </div>
+</section>
+<script src="create.js"></script>
+</body>
+</html>
